@@ -18,7 +18,13 @@ public class Account {
     }
 
     private void withdraw(BigDecimal amount) {
+        checkSufficientFunds(amount);
         balance = balance.subtract(amount);
+    }
+
+    private void checkSufficientFunds(BigDecimal amount) {
+        if(amount.compareTo(balance) > 0)
+            throw new InsufficientFundsException();
     }
 
     private void deposit(BigDecimal amount) {
