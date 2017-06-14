@@ -1,4 +1,7 @@
-package com.example.bank;
+package com.example.bank.service;
+
+import com.example.bank.domain.Account;
+import com.example.bank.repository.AccountRepository;
 
 import java.math.BigDecimal;
 import java.util.concurrent.ConcurrentHashMap;

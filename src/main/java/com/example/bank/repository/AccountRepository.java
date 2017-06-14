@@ -1,4 +1,6 @@
-package com.example.bank;
+package com.example.bank.repository;
+
+import com.example.bank.domain.Account;
 
 public interface AccountRepository {
 

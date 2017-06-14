@@ -1,4 +1,7 @@
-package com.example.bank;
+package com.example.bank.repository.inmemory;
+
+import com.example.bank.domain.Account;
+import com.example.bank.repository.AccountRepository;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;

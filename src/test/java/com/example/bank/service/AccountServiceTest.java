@@ -1,5 +1,8 @@
-package com.example.bank;
+package com.example.bank.service;
 
+import com.example.bank.domain.Account;
+import com.example.bank.domain.InsufficientFundsException;
+import com.example.bank.repository.AccountRepository;
 import org.junit.Test;
 
 import java.math.BigDecimal;

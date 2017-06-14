@@ -1,5 +1,8 @@
-package com.example.bank;
+package com.example.bank.service;
 
+import com.example.bank.domain.Account;
+import com.example.bank.repository.AccountRepository;
+import com.example.bank.repository.inmemory.InMemoryAccountRepository;
 import org.openjdk.jcstress.annotations.Actor;
 import org.openjdk.jcstress.annotations.Arbiter;
 import org.openjdk.jcstress.annotations.Description;
