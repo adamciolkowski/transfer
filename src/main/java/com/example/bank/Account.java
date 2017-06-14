@@ -2,7 +2,7 @@ package com.example.bank;
 
 import java.math.BigDecimal;
 
-public class Account {
+public class Account implements Cloneable {
 
     private final String id;
     private BigDecimal balance;
@@ -29,6 +29,19 @@ public class Account {
 
     private void deposit(BigDecimal amount) {
         balance = balance.add(amount);
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public BigDecimal getBalance() {
+        return balance;
+    }
+
+    @Override
+    public Account clone() {
+        return new Account(id, balance);
     }
 
     @Override
