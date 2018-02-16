@@ -41,7 +41,11 @@ public class Account implements Cloneable {
 
     @Override
     public Account clone() {
-        return new Account(id, balance);
+        try {
+            return (Account) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError(e);
+        }
     }
 
     @Override
